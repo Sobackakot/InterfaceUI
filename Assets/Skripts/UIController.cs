@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class UIController : MonoBehaviour, IPointerEnterHandler, IPointerClickHandler, IPointerExitHandler
 { 
     [SerializeField] private GameObject activeHero;
+    [SerializeField] private GameObject infoBlock_currentHero;
     public void OnPointerClick(PointerEventData eventData)
     {
         if (eventData.button == PointerEventData.InputButton.Left)
@@ -25,7 +26,7 @@ public class UIController : MonoBehaviour, IPointerEnterHandler, IPointerClickHa
     }
     public virtual void LeftMouseClick()
     {
-        Debug.Log(gameObject.name);
+        infoBlock_currentHero.gameObject.SetActive(true);
     }
     public virtual void RightMouseClick()
     {

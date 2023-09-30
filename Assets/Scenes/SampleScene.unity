@@ -582,7 +582,7 @@ GameObject:
   m_Component:
   - component: {fileID: 200354243}
   m_Layer: 5
-  m_Name: Informations
+  m_Name: InfoBlock_currentHero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2429,7 +2429,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 121.66994, y: 4.7000055}
+  m_AnchoredPosition: {x: 121.66994, y: 4.7000046}
   m_SizeDelta: {x: 68.159, y: 50}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &396259413
@@ -2563,7 +2563,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 55.7299, y: 0.00007135829}
+  m_AnchoredPosition: {x: 55.729904, y: 0.00007135829}
   m_SizeDelta: {x: 61.46, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &419601390
@@ -2702,7 +2702,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -141.403, y: -0.001}
+  m_AnchoredPosition: {x: -141.40298, y: -0.001}
   m_SizeDelta: {x: -264.897, y: 39.448}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &469373783
@@ -3927,6 +3927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeHero: {fileID: 1473613240}
+  infoBlock_currentHero: {fileID: 200354242}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -5305,7 +5306,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1023569877}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 200354242}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1023569877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6183,6 +6196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeHero: {fileID: 2125977151}
+  infoBlock_currentHero: {fileID: 200354242}
 --- !u!1 &1186273122
 GameObject:
   m_ObjectHideFlags: 0
@@ -6262,7 +6276,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -39.635, y: 0}
+  m_AnchoredPosition: {x: -39.63501, y: 0}
   m_SizeDelta: {x: -79.271, y: 184.02}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1206115358
@@ -6713,6 +6727,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeHero: {fileID: 364990607}
+  infoBlock_currentHero: {fileID: 200354242}
 --- !u!1 &1266111459 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1297407038754876090, guid: de28678a586d82541963cb909c0afa39, type: 3}
@@ -6741,6 +6756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeHero: {fileID: 1266111459}
+  infoBlock_currentHero: {fileID: 200354242}
 --- !u!1 &1389921032
 GameObject:
   m_ObjectHideFlags: 0
@@ -6966,6 +6982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeHero: {fileID: 1491341960}
+  infoBlock_currentHero: {fileID: 200354242}
 --- !u!1 &1435741635
 GameObject:
   m_ObjectHideFlags: 0
@@ -7102,7 +7119,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 60.7, y: 0.00007135829}
+  m_AnchoredPosition: {x: 60.699997, y: 0.00007135829}
   m_SizeDelta: {x: 76.131, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1437985632
@@ -7380,7 +7397,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -93.4, y: 1.3}
+  m_AnchoredPosition: {x: -93.4, y: 1.2999992}
   m_SizeDelta: {x: 56.091, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1493167426
@@ -8056,7 +8073,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 114.93902, y: 0.00007135844}
+  m_AnchoredPosition: {x: 114.939026, y: 0.00007135844}
   m_SizeDelta: {x: 51.171005, y: 50}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1670865885
@@ -9141,6 +9158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeHero: {fileID: 898039527}
+  infoBlock_currentHero: {fileID: 200354242}
 --- !u!1 &2070377157
 GameObject:
   m_ObjectHideFlags: 0
@@ -9332,7 +9350,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -16.868, y: 0}
+  m_AnchoredPosition: {x: -16.867981, y: 0}
   m_SizeDelta: {x: -105.706, y: 249.294}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!1 &2142533375
