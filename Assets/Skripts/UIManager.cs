@@ -11,13 +11,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject activImageObj;
 
     [SerializeField] private List<GameObject> defaultObjects;
-    [SerializeField] private List<GameObject> activeObjects;
-
-    private void Start()
-    {
-        ReturnImageDefault();
-    }
-
+    [SerializeField] private List<GameObject> activeObjects;  
     public void OpenMenuButton()
     {
         CloseMenuButton();
@@ -38,10 +32,5 @@ public class UIManager : MonoBehaviour
             go.SetActive(true);
         }
     }
-
-    private void ReturnImageDefault()
-    { 
-        defaultImageObj.gameObject.SetActive(true); 
-        activImageObj.gameObject.SetActive(false);
-    }
+ 
 }
